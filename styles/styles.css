@@ -1,18 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
 :root {
   /* --main-color: #4FB749; green color */
-  --main-color: #008000;
+  --dark-main-color: #0053c7;
   /* primary color */
-  --dark-main-color: #006400;
-  --light-main-color: #69c527;
+  --main-color: #005DE5;
+  --light-main-color: #4C8EEF;
+  --very-light-main-color: #C0D9FE;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-hr {
-  margin-top: 8rem;
 }
 
 .logo {
@@ -28,7 +26,7 @@ hr {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .title {
@@ -36,13 +34,77 @@ hr {
   margin: 8rem 5rem 5rem 5rem;
   font-weight: 800;
   font-size: 4rem;
-  
+
+}
+
+/* our services (dynamic tabs) */
+
+.tab-services {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab-services a {
+  padding: 2rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--dark-main-color);
+}
+
+.tab-services a:hover {
+  background-color: var(--light-main-color);
+  color: white;
+}
+
+.tab-services:not(.active) {
+  border-color: transparent;
+  background-color: var(--very-light-main-color);
+}
+
+.tab-services .active {
+  border-color: transparent;
+  background-color: var(--dark-main-color) !important;
+}
+
+.tab-services li {
+  text-align: center;
+}
+
+.tab-content-services {
+  padding: 3rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--dark-main-color);
+  color: white;
+
+}
+
+.tab-content-services h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.tab-content-services h3 {
+  font-size: 1.1rem;
+}
+
+.tab-content-services h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: inline;
+}
+
+.tab-content-services .btn-success {
+  margin-right: 1rem;
 }
 
 /* why choose clarion */
 
 .card-why {
-text-align: center;
+  text-align: center;
 
 }
 
@@ -55,6 +117,12 @@ text-align: center;
   font-weight: bold;
 }
 
+/* facts */
+.img-facts {
+  width: 100%;
+  margin-top: 8rem;
+}
+
 /* have your quote today */
 .img-quote {
   width: 100%;
@@ -62,6 +130,7 @@ text-align: center;
 
 .container-quote {
   position: relative;
+  margin-top: 8rem;
 }
 
 .div-quote {
@@ -91,13 +160,52 @@ text-align: center;
 .text-quote {
   display: table-cell;
   vertical-align: middle;
-  color: white;  
+  color: white;
   font-size: 1.5rem;
   padding-left: 1rem;
 }
 
 .bold-text-quote {
   font-weight: 700;
+}
+
+/* footer */
+footer {
+  padding: 5rem 0;
+  background: var(--very-light-main-color);
+}
+
+footer h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+footer h3 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+footer img {
+  height: 8rem;
+}
+
+footer .btn {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+footer i {
+  float: left;
+  padding-right: 1rem;
+}
+
+/* copyright */
+.copyright {
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  background-color: var(--dark-main-color);
 }
 
 /* card */
@@ -188,6 +296,7 @@ body .container .card .box .content a {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
+
 body .container .card .box .content a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   background: #fff;
