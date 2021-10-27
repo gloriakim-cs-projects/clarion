@@ -2,11 +2,11 @@
 
 :root {
   /* --main-color: #4FB749; green color */
-  --dark-main-color: #0053c7;
+  --dark-main-color: #03440c;
   /* primary color */
-  --main-color: #005DE5;
-  --light-main-color: #4C8EEF;
-  --very-light-main-color: #C0D9FE;
+  --main-color: #04773b;
+  --light-main-color: #1db65d;
+  --very-light-main-color: #e0ffe7;
 }
 
 body {
@@ -45,13 +45,15 @@ body {
   list-style-type: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-shadow: 0rem 0rem 2rem rgb(100, 100, 100);
+  
 }
 
 .tab-services a {
   padding: 2rem;
   font-weight: 800;
   font-size: 1.2rem;
-  color: var(--dark-main-color);
+  color: var(--very-light-main-color);
 }
 
 .tab-services a:hover {
@@ -60,26 +62,27 @@ body {
 }
 
 .tab-services:not(.active) {
-  border-color: transparent;
-  background-color: var(--very-light-main-color);
+  /* border-color: transparent; */
+  background-color: var(--main-color);
 }
 
 .tab-services .active {
   border-color: transparent;
-  background-color: var(--dark-main-color) !important;
-}
-
-.tab-services li {
-  text-align: center;
+  background-color: white !important;
+  color: var(--dark-main-color) !important;
 }
 
 .tab-content-services {
   padding: 3rem;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background-color: var(--dark-main-color);
-  color: white;
+  background-color: white;
+  color: black;
+  box-shadow: 0rem 0rem 2rem rgb(100, 100, 100);
+}
 
+.tab-content-services i {
+  color: var(--dark-main-color);
 }
 
 .tab-content-services h2 {
@@ -118,9 +121,28 @@ body {
 }
 
 /* facts */
-.img-facts {
-  width: 100%;
-  margin-top: 8rem;
+.container-facts {
+  background: linear-gradient(to right, var(--dark-main-color), var(--light-main-color)); margin-top: 8rem;
+}
+
+.col-facts {
+  background: white; margin: 8% 15%; padding: 5% 4%; border-radius: 1%; box-shadow: 0rem 0rem 2rem black;
+}
+
+.h2-facts {
+  font-weight: 600; font-size: 1.8rem;
+}
+
+.h3-facts {
+  font-weight: 600; font-size: 1.3rem;
+}
+
+.h3-facts i {
+  color: var(--dark-main-color);
+}
+
+.p-facts {
+  margin-bottom: 1.3rem;
 }
 
 /* have your quote today */
