@@ -46,18 +46,19 @@ body {
 }
 
 .carousel-caption { 
-  left: 70%;
-  right: 5%;
-  top: 30%;
+  left: 65%;
+  right: 3%;
+  top: 25%;
+  text-align: right;
 }
 
 .carousel-caption h5 {
-  font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 2.3rem;
 }
 
-.carousel-caption p {
-  font-size: 2rem;
+.carousel-caption hr {
+  border: 2px solid;
+  margin-left: 60%;
 }
 
 .title {
