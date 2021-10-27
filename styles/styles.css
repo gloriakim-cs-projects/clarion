@@ -45,6 +45,21 @@ body {
   transform: translateY(-50%);
 }
 
+.carousel-caption { 
+  left: 70%;
+  right: 5%;
+  top: 30%;
+}
+
+.carousel-caption h5 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.carousel-caption p {
+  font-size: 2rem;
+}
+
 .title {
   text-align: center;
   margin: 8rem 5rem 5rem 5rem;
@@ -121,6 +136,15 @@ body {
 }
 
 /* why choose clarion */
+
+.h1-why {
+  padding-top: 5rem;
+  font-weight: 800; font-size: 2.3rem; text-align: center; margin-top: 5rem;
+}
+
+.h2-why {
+  text-align: center; font-size: 1.3rem; margin-top: 1rem; margin-bottom: 3rem;
+}
 
 .card-why {
   text-align: center;
